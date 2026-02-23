@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - By Nancy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- this link is for the search icon -->
+
+</head>
+
+<body>
+    <script src="script.js" defer></script>
+    <div class="container">
+
+        <div class="weather-input">
+
+            <div class="input-group">
+                <input type="text" id="userLocation" placeholder="Search for place...">
+                <select class="converter" id="converter">
+                    <option>°C</option> <!-- &deg;C for degree symbol -->
+                    <option>°F</option>
+                </select>
+                <i class="fa fa-search" onclick="findUserLocation()"></i>
+
+
+            </div>
+            <div class="weatherIcon"></div> <!-- div works as a container for the weather icon -->
+            <!-- abbreviation for font awesome icon -->
+            <h2 class="temperature"></h2>
+            <div class="feelslike"></div>
+            <div class="weatherDescription"></div>
+            <hr>
+            <div class="date"></div>
+            <div class="city"></div>
+            <div class="weather-output">
+                <div class="theme-wrapper">
+                    <span class="mode-text">Dark Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <h2 class="heading">Today's Highlights</h2>
+                <div class="highlights">
+                    <div class="humidity">
+                        Humidity
+                        <i class="fa-solid fa-water"></i>
+                        <h1 id="HValue"></h1>
+                    </div>
+
+                    <div class="wind-speed">
+                        Wind Speed
+                        <i class="fa-solid fa-wind"></i>
+                        <h1 id="WValue"></h1>
+                    </div>
+
+                    <div class="Sun">
+                        <span>
+                            <i class="fa-solid fa-sun"></i>
+                            <p><span id="SRValue"></span>Sunrise</p>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-sun"></i>
+                            <p><span id="SSValue"></span>Sunset</p>
+                        </span>
+                    </div>
+
+                    <div class="clouds">
+                        Clouds
+                        <i class="fa-solid fa-cloud"></i>
+                        <h1 id="CValue"></h1>
+                    </div>
+
+                    <div class="rain">
+                        Rain
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                        <h1 id="RValue"></h1>
+                    </div>
+
+                    <div class="pressure">
+                        Pressure
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <h1 id="PValue"></h1>
+                    </div>
+                </div>
+                <br>
+
+
+
+                <h2 class="heading">This Week</h2>
+                <div class="Forecast"></div>
+
+            </div>
+        </div>
+</body>
+
+</html>

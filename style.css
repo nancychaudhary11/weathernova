@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* this url is imported to get google fonts and download font styles*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    /*  :: is used for    PSEUDO- elements    */
+    width: 8px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
+body {
+    height: auto;
+
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.weather-input {
+    width: 28%;
+    position: absolute;
+    inset: 0;
+    /* inset is used for to set distance of all sides*/
+    background: rgba(135, 206, 250, 0.6);
+    padding: 1rem 2.5rem;
+
+
+
+}
+
+.weatherIcon {
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    display: block;
+    height: 100px;
+    margin: 5px;
+}
+
+
+.input-group {
+    position: relative;
+    display: flex;
+    /*flexbox is used here to arrange in row or column*/
+    align-items: center;
+    margin: 2rem 0;
+
+}
+
+.input-group input {
+    background-color: white;
+    text-transform: capitalize;
+    padding: 1rem;
+    font-size: 15px;
+    border-radius: 6px;
+    width: 100%;
+    outline: none;
+    border: none;
+
+
+}
+
+.input-group .converter {
+    position: absolute;
+    right: 45px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.input-group .fa-search {
+    position: absolute;
+    right: 15px;
+    color: grey;
+    cursor: pointer;
+    font-size: 22px;
+
+}
+
+.weather-output {
+    width: 72%;
+    position: fixed;
+    inset: 0;
+    margin-left: 28%;
+    padding: 2rem;
+    background: #f4f5ff;
+    overflow: auto;
+
+}
+
+
+
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-flow: row;
+    row-gap: 1rem;
+    column-gap: 10px;
+
+}
+
+.Forecast {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    grid-auto-flow: row;
+    row-gap: 1rem;
+    column-gap: 10px;
+}
+
+.highlights div,
+.Forecast div {
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #8dcdfc;
+    border-radius: 20px;
+    padding: 1rem;
+
+
+}
+
+
+
+.highlights i {
+    font-size: 30px;
+
+}
+
+.Sun span {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.weather-input .feelslike,
+.weather-input .weatherDescription,
+.weather-input .date,
+.weather-input .city {
+    padding: 10px 0;
+}
+
+.temperature {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.weatherDescription i {
+    font-size: 25px;
+}
+
+.heading {
+    margin: 10px;
+}
+
+/* TOGGLE */
+.theme-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.mode-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*  SWITCH STYLE  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: linear-gradient(45deg, #56ccf2, #2f80ed);
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    left: 4px;
+    bottom: 4px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+
+input:checked+.slider {
+    background: linear-gradient(45deg, #333, #111);
+}
+
+input:checked+.slider:before {
+    transform: translateX(34px);
+}
+
+
+/*  DARK MODE  */
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Left panel */
+body.dark .weather-input {
+    background: #1e1e1e;
+}
+
+/* Right panel */
+body.dark .weather-output {
+    background: #181818;
+}
+
+/* Cards */
+body.dark .highlights div,
+body.dark .Forecast div {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+/* Input field */
+body.dark .input-group input {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+/* Dropdown */
+body.dark .input-group .converter {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+/* Search icon */
+body.dark .input-group .fa-search {
+    color: #bbbbbb;
+}
+
+/* Headings */
+body.dark .heading {
+    color: #ffffff;
+}
+
+/* Mode text */
+body.dark .mode-text {
+    color: #ffffff;
+}
+
+/* HR line */
+body.dark hr {
+    border-color: #444;
+}
