@@ -50,7 +50,7 @@ https://openweathermap.org/api
 * Better mobile optimization
 * Error UI instead of alert()
 * Weather animations
-* PWA support
+* Add hourly weather updates
 
 ---
 
