@@ -1,6 +1,6 @@
 # 🌦️ WeatherNova
 
-A responsive weather forecast web application built using **HTML, CSS, and Vanilla JavaScript**, integrated with the OpenWeather API to provide real-time weather updates and a 5-day forecast.
+A responsive weather forecast web application built using **HTML, CSS, and Vanilla JavaScript**, integrated with the **OpenWeather API** to provide real-time weather updates and a 5-day forecast.
 
 🔗 Live Demo: https://weathernova-nancy.netlify.app/
 
@@ -16,7 +16,6 @@ A responsive weather forecast web application built using **HTML, CSS, and Vanil
 * 📊 5-Day weather forecast
 * 🌙 Dark / Light mode with persistent theme (localStorage)
 * 🎨 Dynamic background change based on weather condition
-* 📱 Responsive layout
 
 ---
 
@@ -25,7 +24,7 @@ A responsive weather forecast web application built using **HTML, CSS, and Vanil
 * **HTML5**
 * **CSS3 (Grid + Flexbox)**
 *  JavaScript (ES6)
-* **OpenWeather REST API**
+* **OpenWeather API**
 * **Netlify (Deployment)**
 
 ---
@@ -59,7 +58,6 @@ https://openweathermap.org/api
 
 **Nancy Chaudhary**
 B.Tech CSE Student
-Frontend & JavaScript Developer
 
 GitHub: https://github.com/nancychaudhary11
 
