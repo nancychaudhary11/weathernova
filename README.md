@@ -4,14 +4,13 @@ A responsive weather forecast web application built using **HTML, CSS, and Vanil
 
 🔗 Live Demo: https://weathernova-nancy.netlify.app/
 
-
 ## 🚀 Features
 
 * 🌍 Search weather by city name
 * 🌡️ Real-time temperature display (°C / °F converter)
 * 📅 Current date and time display
 * 💨 Wind speed, humidity, pressure, cloud coverage
-* 🌅 Sunrise and sunset timing
+* 🌅 Sunrise and sunset timing - based on the location
 * 🌧️ Rain volume detection
 * 📊 5-Day weather forecast
 * 🌙 Dark / Light mode with persistent theme (localStorage)
@@ -41,18 +40,16 @@ A responsive weather forecast web application built using **HTML, CSS, and Vanil
 
 OpenWeather API
 https://openweathermap.org/api
-
 ---
 
 ## 📌 Future Improvements
 
-* Geolocation-based weather detection
-* Better mobile optimization
+* Geolocation-based weather detection -with live Map
+* Better mobile optimization - responsiveness
 * Error UI instead of alert()
 * Weather animations
 * Add hourly weather updates
-
----
+* Weekly plans dashboard
 
 ## 👩‍💻 Author
 
