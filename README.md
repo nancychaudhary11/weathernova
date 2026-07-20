@@ -42,6 +42,14 @@ OpenWeather API
 https://openweathermap.org/api
 ---
 
+Preview - 
+1. <img width="1359" height="716" alt="Screenshot 2026-02-24 000307" src="https://github.com/user-attachments/assets/df6ebbc7-1ebf-4399-bbbc-e951e28c5ece" />
+2. <img width="1365" height="722" alt="Screenshot 2026-02-24 000327" src="https://github.com/user-attachments/assets/8098fd7d-ff9d-4b2f-889c-bbd5c3d73b1b" />
+3. <img width="1365" height="720" alt="Screenshot 2026-02-24 000342" src="https://github.com/user-attachments/assets/3bf7624e-e6a8-4818-954e-39d6aa1d144c" />
+
+
+
+
 ## 📌 Future Improvements
 
 * Geolocation-based weather detection -with live Map
